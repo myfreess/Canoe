@@ -7,3 +7,5 @@ darkforest -> 我不是RAY桑
 四维厨子 -> snowtreexx
 
 机器人与人与图灵测试 -> 天在云之颠
+
+前座的赵拉拉 -> 普通人jc
