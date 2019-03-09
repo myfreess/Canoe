@@ -11,6 +11,9 @@ set -xeuo -pipefail
 function book-source {
 cat <<EOF 
 4106114562 机器人与人与图灵测试.epub
+5156213281 破灭之实.epub
+5796096351 平行世界中的三体.epub
+
 EOF
 }
 
@@ -24,7 +27,7 @@ IFS=$(echo -e "\n")
 for i in $(book-source); do
 	id=$(awk '{print $1}' <<<"$i")
 	book_name=$(awk '{print $2}' <<<"$i")
-	tieba-to-epub $id $book_name
+	tieba-to-epub $id $book_name --see-lz
 done
 }
 
